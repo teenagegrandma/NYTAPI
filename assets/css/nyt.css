@@ -1,0 +1,20 @@
+* {
+	border-radius: 0pt;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	margin: 0 auto;
+	width: 800px;
+}
+
+.jumbotron {
+	background-color: #263866;
+	color: white;
+	width: 795px;
+}
+
+.jumbotron h1 {
+	font-size: 30pt;
+}
+
