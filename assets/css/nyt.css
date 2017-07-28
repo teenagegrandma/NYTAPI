@@ -1,0 +1,38 @@
+* {
+	border-radius: 0pt;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	margin: 0 auto;
+	width: 800px;
+	background-color: #eceff0;
+}
+
+.jumbotron {
+	background-color: #263866;
+	color: white;
+	width: 795px;
+}
+
+.jumbotron h1 {
+	font-size: 30pt;
+}
+
+.jumbotron img {
+	width: 55px;
+}
+
+.panel-heading {
+	background-color: #263866;
+	color: white;
+}
+
+.panel {
+	border-color: #263866;
+}
+
+.btn-default {
+	background-color: #a2acac;
+	color: white;
+}
