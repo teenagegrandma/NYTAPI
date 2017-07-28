@@ -6,33 +6,55 @@
 body {
 	margin: 0 auto;
 	width: 800px;
-	background-color: #eceff0;
+	background: url('../images/background.png');
 }
 
 .jumbotron {
-	background-color: #263866;
+	background-color: black;
 	color: white;
 	width: 795px;
-}
-
-.jumbotron h1 {
-	font-size: 30pt;
+	margin-bottom:;
 }
 
 .jumbotron img {
 	width: 55px;
+	margin-right: 10pt;
+}
+
+.jumbotron h1 {
+	font-size: 26pt;
+	margin-top: 10pt;
+}
+
+.btn img {
+	width: 20px;
+	margin-right: 8pt;
+}
+
+.btn:hover {
+	background-color: black;
+	color: white;
 }
 
 .panel-heading {
-	background-color: #263866;
+	background-color: black;
 	color: white;
 }
 
 .panel {
-	border-color: #263866;
+	border: none;
+}
+
+.panel-title img {
+	width: 20px;
+	margin-right: 5pt;
 }
 
 .btn-default {
-	background-color: #a2acac;
+	background-color: #8c8c8c;
 	color: white;
+}
+
+#secondPanel {
+	margin-bottom: 1em;
 }
