@@ -6,6 +6,7 @@
 body {
 	margin: 0 auto;
 	width: 800px;
+	background-color: #eceff0;
 }
 
 .jumbotron {
@@ -18,3 +19,20 @@ body {
 	font-size: 30pt;
 }
 
+.jumbotron img {
+	width: 55px;
+}
+
+.panel-heading {
+	background-color: #263866;
+	color: white;
+}
+
+.panel {
+	border-color: #263866;
+}
+
+.btn-default {
+	background-color: #a2acac;
+	color: white;
+}

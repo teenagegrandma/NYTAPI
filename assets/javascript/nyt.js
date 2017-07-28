@@ -1,9 +1,7 @@
- <script type="text/javascript">
-  var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=fb83d3c238d447ed9f3fe3f79a3c06e3";
+var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=fb83d3c238d447ed9f3fe3f79a3c06e3";
 $(document).ready(function() {
-  var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=fb83d3c238d447ed9f3fe3f79a3c06e3";
   var query;
-  var numRecords;
+  var records;
   var beginYear;
   var endYear;
   var articleCount = 0;
@@ -21,15 +19,14 @@ $(document).ready(function() {
     beginYear = '';
     articleCount = 0;
     endYear = '';
-    url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=fb83d3c238d447ed9f3fe3f79a3c06e3";
   }  
-  $('.submit').on('click',function(event) {
+  $('#searchButton').on('click',function(event) {
     //Empty out previous results
     $('#searchResults').empty();
     event.preventDefault();
     // INPUTS
-    query = escape($('#searchTerm').val().trim());
-    numRecords = $('#numRecords').val();
+    query = escape($('#search').val().trim());
+    records = $('#records').val();
     // years
     beginYear = $('#startYear').val() + '0101';
     endYear = $('#endYear').val() + '1231';
@@ -45,14 +42,14 @@ $(document).ready(function() {
     }
     console.log(url);
     // RESULTS
-    if (numRecords <= 10){
+    if (records <= 10){
       $.ajax({
         url: url,
         method: 'GET',
       }).done(function(result) {
         console.log(result);
         var article = result.response.docs;
-        for (var i = 0; i < numRecords; i++) {
+        for (var i = 0; i < records; i++) {
           articleCount++;
           articleDiv = $('<div>').addClass('col-md-12 well');
           articleTitle = '<h2><span class="badge">' + articleCount + '</span> ' + article[i].headline.main +'</h2>';
@@ -92,3 +89,4 @@ $(document).ready(function() {
   });
     
 });
+Add Comment
