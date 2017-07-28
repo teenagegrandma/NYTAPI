@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Trivia Game">
-	<meta name="author" content="Mitali Naik">
-	
-	<title>New York Times Search API</title>
-
-	<!--Bootstrap CDN-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<!--Google Font-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600i,700|Open+Sans" rel="stylesheet">
-	<!--External Stylesheet-->
-	<link rel="stylesheet" href="assets/css/nyt.css" type="text/css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trivia Game">
+    <meta name="author" content="Mitali Naik">
+    <title>New York Times Search API</title>
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600i,700|Open+Sans" rel="stylesheet">
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="assets/css/nyt.css" type="text/css">
 </head>
-<body>
 
+<<<<<<< HEAD
 <div class="row">
 <div class="span12">
     <div class="jumbotron center-block" >
@@ -87,5 +85,72 @@
   <!--Java script -->
   <script type="text/javascript" src="assets/javascript/nyt.js"></script>
 
+=======
+<body>
+    <div class="row">
+        <div class="span12">
+            <div class="jumbotron center-block">
+                <div class=" text-center">
+                    <img src="assets/images/newspaper.png">
+                    <h1>New York Times Search</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="span12">
+            <div class="panel-heading">
+                <h3 class="panel-title">Search Parameters</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="usr">Search Term</label>
+                    <input type="text" class="form-control" id="search">
+                </div>
+                <div class="form-group">
+                    <label for="sel1">Number of Records to Retrieve:</label>
+                    <select class="form-control" id="sel1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="text">Start Year (Optional):</label>
+                    <input type="text" class="form-control" id="startYear">
+                </div>
+                <div class="form-group">
+                    <label for="text">End Year (Optional):</label>
+                    <input type="text" class="form-control" id="endYear">
+                </div>
+                <button class="btn btn-default" type="button" id="searchButton">Search</button>
+                <button class="btn btn-default" type="button" id="clearButton">Clear Results</button>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="span12">
+            <div class="panel-heading">
+                <h3 class="panel-title">Top Articles</h3>
+            </div>
+            <div class="panel-body">
+                <div id="searchResults"></div>
+                <div id="searchButton"></div>
+            </div>
+        </div>
+    </div>
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <!--Java script -->
+    <script type="text/javascript" src="assets/javascript/nyt.js"></script>
+>>>>>>> b9aa445e3b57ebe63e2adf30a6c482a0906ff748
 </body>
+
 </html>
